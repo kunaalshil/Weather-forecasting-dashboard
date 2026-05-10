@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+height: 100vh;
+width: 100%;
+ padding: 30px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: Arial, Helvetica, sans-serif;
+ color: rgb(255, 255, 255);
+ background-color: rgba(255, 255, 255, 0.08);
+ -webkit-backdrop-filter: blur(10px);
+ backdrop-filter: blur(10px);
+  transition: background 0.6s ease-in-out;
+}
+
+
+
+.app_div{
+    max-width: 850px;
+    width: min(95vw, 850px);
+    min-height: 70vh;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 40px 55px 1fr;
+    border-radius: 16px;
+    background: linear-gradient(
+      to bottom,
+      #1f2937,   /* dark blue-gray */
+      #111827    /* deep base */
+    );
+}
+
+
+.render_State{
+    width: 100%;
+}
+
+
+.panel_ForSearch{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 15px;
+}
+
+
+.panel_ForSearch #textInput{
+  height: 42px;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  padding: 12px 18px;
+}
+.head  h1{
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.head{
+    width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.app_div.sunny {
+
+background: linear-gradient(to bottom, #1e90ff, #87cefa, #e0f7ff);
+ }
+      /* radial-gradient(circle at 90% 10%, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 8%, transparent 15%), /* soft sun glow */
+     /*linear-gradient(to bottom, #2f5bd3 0%, #4a74d1 40%, #5c84d6 100%); */  /*linear-gradient(to top, #fceabb, #f8b500)*/
+
+
+.app_div.cloudy {
+  background: linear-gradient(to top, #d7d2cc, #304352);
+}
+
+.app_div.rainy {
+  background: linear-gradient(to top, #4b79a1, #283e51);
+}
+
+.app_div.snowy {
+  background: linear-gradient(to top, #e6dada, #274046);
+}
+
+.app_div.storm {
+  background: linear-gradient(to top, #141e30, #243b55);
+}
+.app_div.haze{
+  background: linear-gradient(
+  to bottom,
+  #8b7e74,   /* dusty warm gray */
+  #6b7280,
+  #374151
+);
+}
+
+
+.weatherResult .see_More{
+ min-height: 300px;
+ width: 100%;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ gap: 12px;
+ padding: 12px;
+}
+.weatherResult{
+  height: 100%;
+  width: 100%;
+   display: grid;
+    grid-template-rows:repeat(2, auto);
+    gap: 10px;
+}
+
+
+.see_More .box1 {
+  height: auto;
+  width: 100%;
+  color: white;
+  border-radius: 10px;
+  background-color:rgba(255,255,255,0.08);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+ box-shadow: 5px 5px 10px #272626;
+  opacity: 1;
+  padding: 12px;
+  font-size: 18px;
+ display: flex;
+ align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  overflow: hidden;
+}
+.see_More i{
+  color: #3a3838;
+}
+
+#forCity{
+  height:150px;
+  width: 100%;
+  padding: 10px;
+   background-color: transparent;
+  box-shadow:  5px 5px 15px #555555;
+  opacity: 1;
+  display: grid;
+ grid-template-rows: repeat(2,1fr);
+ border-radius: 10px;
+}
+#tempElement{
+  display: grid;
+  grid-template-columns:75px 75px ;
+
+}
+
+
+#tempElement p{
+  margin-top: 14px;
+  padding: 5px;
+   font-size: 28px;
+}
+
+#icon img{
+  height: 74px;
+  width: 74px;
+ 
+}
+#cityId p{
+  font-size: 18px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+  .box1 #pressureElm{
+  height: auto;
+  width: 100%;
+ display: grid;
+ grid-template-rows: repeat(2,auto);
+ align-items: center;
+ 
+}
+.see_More .box1 p{
+  height: 75px;
+  display: flex;
+  align-items: flex-end;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400px;
+  padding: 5px;
+ 
+}
+
+.box1 #sunriseElm{
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2,auto);
+} 
+.box1 #sunsetElm{
+  height: auto;
+  width: 100%;
+ display: grid;
+ grid-template-rows: repeat(2,auto);
+}
+.box1 #humidityElm{
+  height: auto;
+  width: 100%;
+ display: grid;
+ grid-template-rows: repeat(2,auto);
+}
+.box1 #conditionElm{
+   height: auto;
+  width: 100%;
+ display: grid;
+ grid-template-rows: repeat(2,auto);
+}
+.box1 #windElm{
+   height: auto;
+  width: 100%;
+ display: grid;
+ grid-template-rows: repeat(2,auto);
+}
+.box1 #weatherElm{
+ height: auto;
+  width: 100%;
+ display: grid;
+ grid-template-rows: repeat(2,auto);
+}
+.box1 #visibleElm{
+   height: auto;
+  width: 100%;
+ display: grid;
+ grid-template-rows: repeat(2,auto);
+}
+.box1 #feelElm{
+   height: auto;
+  width: 100%;
+ display: grid;
+ grid-template-rows: repeat(2,auto);
+}
+
+@media (max-width: 860px) {
+  .app_div {
+    padding: 18px;
+    grid-template-rows: 40px 60px 1fr;
+  }
+
+  .panel_ForSearch {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 680px) {
+  body {
+    padding: 16px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .app_div {
+    width: 100%;
+    height:auto;
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .panel_ForSearch {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .panel_ForSearch #textInput {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .weatherResult .see_More {
+    grid-template-columns: 1fr;
+  }
+
+  .see_More .box1 {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  #forCity {
+    height: auto;
+    min-height: 180px;
+  }
+}
