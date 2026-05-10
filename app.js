@@ -116,15 +116,15 @@ if(!data || Number(data.cod) !== 200) {
   const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
  
   
-  pressure.innerHTML = `<p><br>Air pressure:<br>${airPressure} hPa</p>`;
- condition1.innerHTML = ` <p><br>Condition:<br>${condition}</p>`;
-  humidity1.innerHTML = ` <p><br>Humidity:<br>${humidity} %</p>`;
-  windSpeed .innerHTML = `<p><br>wind Speed:<br>${Math.round(speed)}mph</p>`;
+  pressure.innerHTML = `<p><br>Air pressure<br>${airPressure} hPa</p>`;
+ condition1.innerHTML = ` <p><br>Condition<br>${condition}</p>`;
+  humidity1.innerHTML = ` <p><br>Humidity<br>${humidity} %</p>`;
+  windSpeed .innerHTML = `<p><br>wind Speed<br>${Math.round(speed)}mph</p>`;
   weatherType.innerHTML = `<p>Weather<br>${weather}</p>`;
-  visible.innerHTML = ` <p><br>Visisbility:<br>${visibility}Km</p>`;
-  feelTemp.innerHTML = `<p><br>Feels Like:<br>${Math.round(feelLike)}°C</p>`;
-  sunriseDiv.innerHTML= `<p>Sunrise:<br> ${sunrise.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>`;
-  sunsetDiv.innerHTML = `<p>Sunset:<br> ${sunset.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>`;
+  visible.innerHTML = ` <p><br>Visisbility<br>${visibility}Km</p>`;
+  feelTemp.innerHTML = `<p><br>Feels Like<br>${Math.round(feelLike)}°C</p>`;
+  sunriseDiv.innerHTML= `<p>Sunrise<br> ${sunrise.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>`;
+  sunsetDiv.innerHTML = `<p>Sunset<br> ${sunset.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>`;
  
 
  
