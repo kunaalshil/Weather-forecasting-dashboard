@@ -64,7 +64,7 @@ npm run dev
 ## 📁 Project Structure
 
 ```
-/src
+project structure
   ├── assets
   ├──project Image
   ├── app.html
