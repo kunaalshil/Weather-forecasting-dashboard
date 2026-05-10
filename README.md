@@ -43,7 +43,7 @@ Deployed on Vercel
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/weather-forecast-app.git
+git clone https://github.com/kunaalshil/Weather-forecasting-dashboard.git
 cd weather-forecast-app
 ```
 
