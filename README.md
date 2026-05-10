@@ -67,7 +67,7 @@ npm run dev
 project structure
   ├── assets
   ├──project Image
-  ├── app.html
+  ├── index.html
   ├── app.css
   └── app.js
 ```
